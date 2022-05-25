@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="validateForm()">
+    <table>
+        <tr>
+            <td>First Name: </td>
+            <td><input type="text" name="afname"><br><br></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input type="text" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td>DOB: </td>
+            <td><input type="date" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Gender: </td>
+            <td><input type="radio" name=""> Male
+                <input type="radio" name=""> Female                
+                <br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Address: </td>
+            <td><textarea cols="25" rows="7"></textarea><br><br></td>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td><input type="text" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Mobile Number: </td>
+            <td><input type="text" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Education: </td>
+            <td><select name="" id="">
+                <option value="ug">UG</option>
+                <option value="pg">PG</option>
+            </select><br><br></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input type="text" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="password" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Return Password: </td>
+            <td><input type="password" name=""><br><br></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="register"></td>
+        </tr>
+    </table>
+    </form>
+    <script>
+        function validateForm(){
+            var fname = document.myform.afname.value;
+
+            if(fname == '' || fname == null){
+                console.log("Checked");
+                alert("first name must be filled out");
+                document.forms['myform']['afname'].focus();
+                return false;
+            }
+        }
+        
+    </script>
+</body>
+</html>

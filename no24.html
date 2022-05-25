@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>click the button to sort the array in descending order.</p>
+    <button onclick="myfunction()">click here</button>
+    <p id="demo"></p>
+    <script>
+        var array = ["Rose","Jasmine","Tulip","Orchid","Hyachit"];
+        document.getElementById("demo").innerHTML = array;
+
+        function myfunction(){
+            array.sort();
+            array.reverse();
+            document.getElementById("demo").innerHTML = array;
+        }
+    </script>
+</body>
+</html>
