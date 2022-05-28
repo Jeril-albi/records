@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav{
+            float: left;
+            width: 30%;
+            height: 450px;
+            background: #f4d03f;
+            padding: 20px;
+        }
+
+        nav ul li{
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #fcf3cf;
+            height: 450px;
+        }
+
+        section::after{
+            content: none;
+            display: table;
+            clear: both;
+        }
+
+        footer{
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Web Design</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>What is web design?</h1>
+            <p>
+                web design refers to the design of website that are displayed on the internet.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>
+            &copy; copyright 2020 web.com
+        </p>
+    </footer>
+</body>
+</html>
